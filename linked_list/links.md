@@ -1,2 +1,2 @@
 # Links for Problem Statement:
-Kadane's Algorithm for Max Sum : https://leetcode.com/problems/maximum-subarray/ \
+Reverse the given Linked List : https://leetcode.com/problems/reverse-linked-list/ 
