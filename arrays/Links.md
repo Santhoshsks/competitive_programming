@@ -8,5 +8,6 @@ Sort Colors 0's 1's 2's sort : https://leetcode.com/problems/sort-colors/ \
 Best Time To Buy Stock : https://leetcode.com/problems/best-time-to-buy-and-sell-stock/ \
 Wizards : https://codeforces.com/contest/591/problem/A \
 Comparison String : https://codeforces.com/contest/1837/problem/B \
-Find the Duplicate Number : https://leetcode.com/problems/find-the-duplicate-number/
+Find the Duplicate Number : https://leetcode.com/problems/find-the-duplicate-number/ \
+Longest Substring : https://leetcode.com/problems/longest-substring-without-repeating-characters/
 
