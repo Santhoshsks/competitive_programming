@@ -4,7 +4,7 @@ for _ in range(int(input())):
     i = 0
     ans = ""
     mini = l[0]
-    maxi = l[0]
+    maxi = l[0] 
     while i < n:
         if l[i] >= maxi:
             maxi = l[i]
