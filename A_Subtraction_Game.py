@@ -3,4 +3,5 @@ for _ in range(int(input())):
     if min(a,b) - 1 == 0:
         print(a + b)
     else:
+        
         print(min(a,b) - 1)
