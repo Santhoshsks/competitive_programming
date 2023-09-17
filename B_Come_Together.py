@@ -1,22 +1,11 @@
+def dis(x1, y1, x2, y2):
+    print(abs(x1 - x2) + abs(y1 - y2))
+    return abs(x1 - x2) + abs(y1 - y2)
+
 for _ in range(int(input())):
     ax, ay = map(int, input().split())
     bx, by = map(int, input().split())
     cx, cy = map(int, input().split())
-    sum = 0
-    x = min(bx, cx)
-    y = min(by, cy)
-
-    if ax < bx and ax < cx:
-        sum += x - ax
-    
-    if ax > bx and ax > cx:
-        sum += ax - x
-
-    if ay < by and ay < cy:
-        sum += y - ay
-    
-    if ay > by and ay > cy:
-        sum += ay - y
-
-    print(sum + 1)
+    sum = dis(ax, bx, ay, by) + dis(ax, cx, ay, cy) - dis(bx, cx, by, cy)
+    print(sum // 2 + 1)
     
