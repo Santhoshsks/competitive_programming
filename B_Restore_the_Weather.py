@@ -11,11 +11,8 @@ for _ in range(int(input())):
 
     for i in range(n):
         d[aa[i]].append(b[i])
-    print(d)
-    print('a',a)
+        
     b = []
-
     for i in a:
         b.append(d[i].pop())
-    print('b',b)
     print(' '.join(map(str, b)))
