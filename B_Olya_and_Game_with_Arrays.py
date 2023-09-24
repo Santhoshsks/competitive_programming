@@ -1,6 +1,6 @@
 for _ in range(int(input())):
-    smallest = float('inf')
-    sec_smallest = float('inf')
+    smallest = 10 ** 9 + 1
+    sec_smallest = 10 ** 9 + 1
     ans = 0
     list_len = int(input())
     if list_len == 1:
