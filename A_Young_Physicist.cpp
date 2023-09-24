@@ -4,15 +4,20 @@ using namespace std;
 int main() {
     int t;
     cin >> t;
-    int ans = 0;
+    int ansx = 0;
+    int ansy = 0;
+    int ansz = 0;
+    int a;
     while (t--)
     {
-        for (int i = 0; i < 3; i++) {
-            int a;
-            cin >> a;
-            ans = ans + a;
-        }
+        cin >> a;
+        ansx = ansx + a;
+        cin >> a;
+        ansy = ansy + a;
+        cin >> a;
+        ansz = ansz + a;
+        
     }
-    if (ans == 0) cout << "YES";
+    if (ansx == 0 && ansy == 0 && ansz == 0) cout << "YES";
     else cout << "NO";
 }
