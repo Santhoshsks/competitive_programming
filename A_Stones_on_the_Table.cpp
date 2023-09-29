@@ -13,8 +13,14 @@ int main() {
     else {
         while (fin < n) {
             if (s[ini] == s[fin])  {
-                
+                fin++;
+                ans++;
+            }
+            else {
+                ini = fin;
+                fin++;
             }
         }
+        cout << ans;
     }
 }
