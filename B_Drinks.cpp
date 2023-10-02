@@ -10,5 +10,5 @@ int main() {
         cin >> t;
         ans += t;
     }
-    cout << ((double)(ans / (n * 100)) * 100);
+    cout << fixed << setprecision(12) << (ans / (n * 100)) * 100;
 }
