@@ -25,7 +25,6 @@ int main() {
             count_right_open++;
         }
     }
-    
     int min_seconds = min(count_left_open, n - count_left_open) + min(count_right_open, n - count_right_open);
     
     cout << min_seconds << endl;
