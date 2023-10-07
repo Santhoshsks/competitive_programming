@@ -13,18 +13,19 @@ int main() {
         if (i == '3') three += 1;
     }
     string ans = "";
-    for (int i = 0; i < (one + two + three); i++) {
+    int sum = (one + two + three);
+    for (int i = 0; i < sum; i++) {
         if (one != 0) {
             ans = ans + '1';
             one--;
-            if ((one + two + three) != 0) ans = ans + '+';continue;
+            if ((one + two + three) != 0) ans = ans + '+';
         }
-        if (two != 0) {
+        else if (two != 0) {
             ans = ans + '2';
             two--;
-            if ((one + two + three) != 0) ans = ans + '+';continue;
+            if ((one + two + three) != 0) ans = ans + '+';
         }
-        if (three != 0){
+        else if (three != 0){
             ans = ans + '3';
             three--;
             if ((one + two + three) != 0) ans = ans + '+';
