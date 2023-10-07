@@ -17,14 +17,19 @@ int main() {
         if (one != 0) {
             ans = ans + '1';
             one--;
+            if ((one + two + three) != 0) ans = ans + '+';continue;
         }
-        else if (two != 0) {
+        if (two != 0) {
             ans = ans + '2';
             two--;
+            if ((one + two + three) != 0) ans = ans + '+';continue;
         }
-        else {
+        if (three != 0){
             ans = ans + '3';
             three--;
+            if ((one + two + three) != 0) ans = ans + '+';
         }
+        
     }
+    cout << ans;
 }
