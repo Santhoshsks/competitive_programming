@@ -12,15 +12,20 @@ int main() {
         cin >> x;
         cin >> s;
         int ans = 0;
-        while (x_len <= s_len * 2) {
+        bool flag = true;
+        while (x_len <= s_len * 26) {
             size_t found = x.find(s);
             if (found != string::npos) {
-                cout << ans << endl;
+                flag = false;
                 break;
             }
             else {
                 ans++;
+                x = x + x;
+                x_len *= 2;
             }
         }
+        if (!flag) cout << ans << endl;
+        else cout << -1 << endl;
     }
 }
