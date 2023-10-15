@@ -11,8 +11,11 @@ public class A_Dima_and_Friends {
             ans += s;
         }
         scanner.close();
-        if (ans % 2 == 0 && numOfFriends % 2 != 0) System.out.println(2);
-        else System.out.println(3);      
+        int ways = 0;
+        for (int i = 1; i < 6; i++) {
+            if ((ans + i) % (numOfFriends + 1) != 1) ways++;
+        }     
+        System.out.println(ways);
         
     }
 }
