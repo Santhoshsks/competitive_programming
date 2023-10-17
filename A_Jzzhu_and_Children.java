@@ -8,10 +8,11 @@ public class A_Jzzhu_and_Children {
         int m = scanner.nextInt();
         scanner.nextLine();
         int ans = 0;
-        int comp = 0;
+        double comp = 0;
         for (int i = 1; i <= n; i++) {
-            int inp = scanner.nextInt();
-            if ((inp / m) > (comp / m)) {
+            
+            double inp = scanner.nextInt();
+            if (Math.ceil(inp / m) >= Math.ceil(comp / m)) {
                 ans = i;
                 comp = inp;                
             }  else if (comp == 0) {
