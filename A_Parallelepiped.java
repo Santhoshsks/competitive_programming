@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class A_Parallelepiped {
+public class A_Parallelepiped {
     public static int gcd(int a, int b) {
         int i = 1;
         if (a < b) 
