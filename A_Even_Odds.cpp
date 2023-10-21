@@ -5,12 +5,17 @@ int main() {
     int n, k;
     cin >> n;
     cin >> k;
-    string so = "";
-    string se = "";
-    for(int i = 1; i < n + 1 ;i++) {
-        if (i % 2) so += to_string(i);
-        else se += to_string(i);
-    }
-    so += se;
-    cout << so[k - 1];
+    if (n % 2) {
+        if ((n / 2) + 1 > k) {
+            cout << k * 2 - 1;
+        } else {
+            cout << (k - (n / 2 + 1)) * 2;
+        }
+    } else {
+        if (n / 2 > k) {
+            cout << k * 2 - 1;
+        } else {
+            cout << (k - (n / 2)) * 2;
+        }
+    }   
 }
