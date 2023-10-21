@@ -2,17 +2,17 @@
 using namespace std;
 
 int main() {
-    int n, k;
+    long long n, k;
     cin >> n;
     cin >> k;
     if (n % 2) {
-        if ((n / 2) + 1 > k) {
+        if ((n / 2) + 1 >= k) {
             cout << k * 2 - 1;
         } else {
             cout << (k - (n / 2 + 1)) * 2;
         }
     } else {
-        if (n / 2 > k) {
+        if (n / 2 >= k) {
             cout << k * 2 - 1;
         } else {
             cout << (k - (n / 2)) * 2;
