@@ -5,7 +5,7 @@ public class B_Xenia_and_Ringroad {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int m = sc.nextInt();
-        int prev = 1; // Start at house 1
+        int prev = 1; 
         long ans = 0;
 
         for (int i = 0; i < m; i++) {
