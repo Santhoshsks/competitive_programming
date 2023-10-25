@@ -11,9 +11,7 @@ public class B_Xenia_and_Ringroad {
         int ans = temp;
         for (int i = 0; i < m - 1; i++) {
             temp = sc.nextInt();
-            if (temp == prev) {
-                continue;
-            } else if (temp < prev) {
+            if (temp < prev) {
                 ans += (n - prev) + temp;
                 prev = temp;
             } else {
