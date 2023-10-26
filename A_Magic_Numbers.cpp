@@ -5,20 +5,17 @@ int main() {
     string inp;
     cin >> inp;
     int n = inp.size();
+    int count = 0;
+    string ans = "YES";
     for (int i = 0; i < n; i++) {
         if (inp[i] == '1') {
-            if (i + 1 < n) {
-                if (inp[i + 1] == '1') {
-                    continue;
-                }
-                else if (inp[i + 1] == '4') {
-                    if (i + 2 < n) {
-                        if (inp[i + 2] == '4') {
-                            
-                        }
-                    }
-            }
-            }
+            count = 0;
+        } else if (inp[i] == '4' && i != 0 && count < 2) {
+            count++;
+        } else {
+            ans = "NO";
+            break;
         }
     }
+    cout << ans;
 }
