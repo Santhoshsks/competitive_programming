@@ -13,7 +13,6 @@ int main() {
         std::cin >> team;
         goals[team]++;
     }
-
     std::string winningTeam;
     int maxGoals = 0;
 
@@ -23,8 +22,6 @@ int main() {
             winningTeam = team.first;
         }
     }
-
     std::cout << winningTeam << std::endl;
-
     return 0;
 }
