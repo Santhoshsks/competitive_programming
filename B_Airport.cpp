@@ -12,15 +12,21 @@ int main() {
         cin >> a[i];
     }
 
-    // Sorting the array in descending order
-    sort(a, a + m, greater<int>());
+    sort(a, a + m);
 
     int minSum = 0;
     int maxSum = 0;
 
     for (int i = 0; i < n; ++i) {
-        minSum += a[i];
-        maxSum += max(a[i], 1);
+        minSum += a[0];
+        --a[0];
+
+        if (a[0] == 0) {
+            sort(a, a + m);
+        }
+
+        maxSum += a[m - 1];
+        --a[m - 1];
     }
 
     cout << maxSum << " " << minSum << endl;
