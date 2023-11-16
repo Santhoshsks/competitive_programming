@@ -8,9 +8,7 @@ for i in s:
             count += 1
         se.add(i)
 
-if count == 1:
-    print("First")
-elif count % 2:
+if count == 0 or count % 2:
     print("First")
 else:
     print("Second")
