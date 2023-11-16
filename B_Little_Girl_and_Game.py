@@ -1,15 +1,16 @@
-def is_palindrome(s):
-    return s == s[::-1]
-
-def game_winner(s):
-    if is_palindrome(s):
-
-        return "First"
-    elif len(s) % 2 == 0 or s.count(s[0]) == len(s):
-
-        return "Second"
-    else:
-        return "First"
-    
 s = input().strip()
-print(game_winner(s))
+
+count = 0
+se = set()
+for i in s:
+    if i not in se:
+        if s.count(i) % 2:
+            count += 1
+        se.add(i)
+
+if count == 1:
+    print("First")
+elif count % 2:
+    print("First")
+else:
+    print("Second")
