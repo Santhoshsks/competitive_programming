@@ -15,7 +15,8 @@ skip = -1
 for i in range(n):
     if l[i][0] != skip:
         if l[i][0] != prev and prev != -1:
-            ans.append([l[i - 1][0], diff])
+            if l[i - 1][0] != skip:
+                ans.append([l[i - 1][0], diff])
             diff = 0
 
         else:
@@ -26,7 +27,8 @@ for i in range(n):
                 if prev != -1:
                     diff = l[i][1] - l[i - 1][1]
         if i == n - 1:
-            ans.append([l[i][0], diff])
+            if l[i - 1][0] != skip:
+                ans.append([l[i][0], diff])
                 
     prev = l[i][0]
 
