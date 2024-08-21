@@ -1,3 +1,4 @@
+
 for _ in range(int(input())):
     a = list(map(int, input().split()))
     k = a[0]
